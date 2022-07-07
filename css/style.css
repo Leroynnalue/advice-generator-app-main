@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400;500;600;800&display=swap);
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root{
+    --light_cyan:hsl(193, 38%, 86%);
+    --neon_green:hsl(150, 100%, 66%);
+    --grayish_blue: hsl(217, 19%, 38%);
+    --dark_grayish_blue: hsl(217, 19%, 24%);
+    --dark_blue: hsl(218, 23%, 16%);
+    --quote:2rem;
+}
+
+main{
+    width:100%;
+    height:100vh;
+    background-color:var(--dark_blue);
+    display:grid;
+    place-items:center;
+}
+
+footer{
+    background-color:var(--dark_blue);
+}
+
+h4{
+    color:var(--neon_green);
+}
+
+.quote_box{
+    max-width:500px;
+    width:90%;
+    padding:2rem 3rem;
+    text-align:center;
+    background-color:var(--dark_grayish_blue);
+    border-radius:1rem;
+    box-shadow:2px 2px 16px var(--grayish_blue);
+    position: relative;
+}
+
+#quote_text{
+    width:95%;
+    font-size:var(--quote);
+    color:var(--light_cyan);
+    margin:1rem auto;
+}
+
+.icon{
+    width:95%;
+    color:var(--light_cyan);
+    position: relative;
+    font-size:2rem;
+    margin:2rem auto;
+}
+
+.icon::before{
+    content:'';
+    width:50%;
+    height:.1px;
+    background-color:var(--light_cyan);
+    display:block;
+    position:absolute;
+    top:50%;
+    left:80%;
+    transform:translate(-50%,-50%);
+}
+
+
+.icon::after{
+    content:'';
+    width:50%;
+    height:.1px;
+    background-color:var(--light_cyan);
+    display:block;
+    position:absolute;
+    top:50%;
+    left:20%;
+    transform:translate(-50%,-50%);
+}
+
+
+#shuffle{
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color:var(--neon_green);
+    width:5rem;
+    height:5rem;
+    border-radius:5rem;
+    padding:1rem;
+    outline:none;
+    border:transparent;
+    display:grid;
+    place-items:center;
+    cursor: pointer;
+}
+
+/* ATTRIBUTION */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .attribution a {
+    color: hsla(0, 0%, 100%, 0.5);
+  }
