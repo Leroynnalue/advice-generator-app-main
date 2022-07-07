@@ -5,6 +5,7 @@ let quote_text = document.querySelector('[quote_text]');
 let quote_generator = document.querySelector('[shuffle]');
 let currentNo  = document.getElementById('advice_no');
 let counter = 0;
+let LOAD_TIME = 15000
 
 let generate_quote = () => {
     fetch(url)
@@ -18,5 +19,5 @@ let generate_quote = () => {
 };
 
 window.addEventListener("load", generate_quote);
-setInterval(generate_quote,6000);
+setInterval(generate_quote,LOAD_TIME);
 quote_generator.addEventListener("click", generate_quote);

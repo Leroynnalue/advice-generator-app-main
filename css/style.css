@@ -29,6 +29,7 @@ footer{
 
 h4{
     color:var(--neon_green);
+    font-size:clamp(1em,2vmin,2em);
 }
 
 .quote_box{
